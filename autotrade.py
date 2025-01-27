@@ -626,20 +626,4 @@ def ai_trading():
         print(f"Strategy Adjustments: {reflection['strategy_adjustments']}")
 
 if __name__ == "__main__":
-   schedule.every().day.at("09:00").do(ai_trading)
-   schedule.every().day.at("21:00").do(ai_trading)
-   
-   logging.basicConfig(
-       level=logging.INFO,
-       format='%(asctime)s - %(levelname)s - %(message)s',
-       handlers=[
-           logging.FileHandler('trading_bot.log'),
-           logging.StreamHandler()
-       ]
-   )
-   
-   logging.info("Trading bot started. Scheduled for 09:00 and 21:00")
-   
-   while True:
-       schedule.run_pending()
-       time.sleep(60)
+    ai_trading()
