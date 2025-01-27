@@ -5,7 +5,6 @@ ta
 selenium
 pillow
 webdriver-manager
-youtube-transcript-api
 pyjwt
 uuid
 streamlit
