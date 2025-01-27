@@ -7,7 +7,6 @@ pillow
 webdriver-manager
 youtube-transcript-api
 pyjwt
-urlencode
 uuid
 hashlib
 streamlit
