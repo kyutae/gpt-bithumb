@@ -27,6 +27,8 @@ import hashlib
 from urllib.parse import urlencode
 import schedule
 import logging
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 
 class TradingDatabase:
     def __init__(self, db_name="trading_history.db"):
@@ -399,7 +401,11 @@ def capture_chart_as_base64(x, y, width, height):
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
     
-    driver = webdriver.Chrome(options=options)
+    #driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()),
+    options=options
+    )
     
     try:
         driver.get('https://www.bithumb.com/react/trade/order/BTC-KRW')
