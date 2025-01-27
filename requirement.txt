@@ -1,0 +1,16 @@
+python-dotenv
+openai
+python-bithumb
+ta
+selenium
+pillow
+webdriver-manager
+youtube-transcript-api
+pyjwt
+urlencode
+uuid
+hashlib
+streamlit
+plotly
+schedule
+logging
