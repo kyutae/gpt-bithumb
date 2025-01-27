@@ -400,6 +400,10 @@ def capture_chart_as_base64(x, y, width, height):
     options.add_argument('--disable-gpu')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--headless')  # GUI 없이 실행
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--user-data-dir=/tmp/chrome-data')  # 유니크한 디렉토리 지정
     
     #driver = webdriver.Chrome(options=options)
     driver = webdriver.Chrome(
