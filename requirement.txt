@@ -8,7 +8,6 @@ webdriver-manager
 youtube-transcript-api
 pyjwt
 uuid
-hashlib
 streamlit
 plotly
 schedule
